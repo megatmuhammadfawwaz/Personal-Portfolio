@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megat Muhammad Fawwaz — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ─── CURSOR ─────────────────────────────────────── -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- ─── NAV ───────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Fawwaz<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ───────────────────────────────────────── -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <!-- Matrix rain canvas -->
+    <canvas id="matrixCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting"><span class="terminal-prefix">root@portfolio:~$</span> <span class="terminal-cmd">whoami</span></p>
+      <h1 class="hero-name">
+        <span class="name-line">Megat Muhammad</span>
+        <span class="name-line accent">Fawwaz</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">// </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-desc">
+        Cybersecurity undergraduate at UNITEN · CTF Player · Yayasan Khazanah Watan Scholar ·
+        Passionate about digital forensics, OSINT &amp; offensive security.
+      </p>
+      <div class="hero-buttons">
+        <a href="#achievements" class="btn btn-primary"><i class="fas fa-flag"></i> CTF Achievements</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-terminal"></i> Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/megatmuhammadfawwaz/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:muhammadfawwaz687@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://tryhackme.com/" target="_blank" rel="noopener" aria-label="TryHackMe"><i class="fas fa-skull-crossbones"></i></a>
+      </div>
+      <!-- Internship banner -->
+      <div class="seeking-banner">
+        <span class="seeking-dot"></span>
+        Actively seeking <strong>Cybersecurity Internship</strong> starting June 2026
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ──────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. About</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <i class="fas fa-user-secret"></i>
+              <p>Megat Fawwaz</p>
+            </div>
+            <div class="photo-glow"></div>
+          </div>
+          <div class="about-badges">
+            <div class="badge"><span class="badge-num">3.90</span><span class="badge-label">CGPA</span></div>
+            <div class="badge"><span class="badge-num">500+</span><span class="badge-label">Connections</span></div>
+            <div class="badge"><span class="badge-num">15+</span><span class="badge-label">Events Led</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            I'm <strong>Megat Muhammad Fawwaz Megat Ezzat Fahmy</strong>, a final-year
+            <strong>BSc. Computer Science (Cyber Security)</strong> student at
+            <strong>Universiti Tenaga Nasional (UNITEN)</strong> and proud
+            <strong>Yayasan Khazanah Watan Scholar</strong>.
+          </p>
+          <p>
+            I have strong foundations in programming, cybersecurity fundamentals, and computer
+            networking with deep interests in <strong>digital forensics, OSINT, and web exploitation</strong>.
+            I actively sharpen my technical skills through Capture The Flag (CTF) challenges —
+            strengthening my offensive security mindset, analytical thinking, and problem-solving abilities.
+          </p>
+          <p>
+            Beyond technical skills, I've built extensive leadership experience through
+            <strong>CLICQ IT Society UNITEN</strong>, having served as President, Treasurer, and
+            currently as Strategic Planner — leading 15+ IT &amp; cybersecurity programmes,
+            workshops, and collaborative events with industry and student communities.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Malaysia 🇲🇾</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-university"></i>
+              <span>Universiti Tenaga Nasional (UNITEN)</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>muhammadfawwaz687@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Cybersecurity · CTF · OSINT · Digital Forensics</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-circle status-dot"></i>
+              <span class="available">Seeking internship — June 2026</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─────────────────────────────────────── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Skills</span>
+        <h2 class="section-title">Arsenal &amp; Toolkit</h2>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-crosshairs"></i> Offensive Security</h3>
+          <div class="skill-grid">
+            <div class="skill-pill"><span class="pill-icon">🌐</span>Web Exploitation</div>
+            <div class="skill-pill"><span class="pill-icon">🔍</span>OSINT</div>
+            <div class="skill-pill"><span class="pill-icon">⚙️</span>Reverse Engineering</div>
+            <div class="skill-pill"><span class="pill-icon">🔐</span>API Pentesting</div>
+            <div class="skill-pill"><span class="pill-icon">🛡️</span>VAPT</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-search"></i> Digital Forensics</h3>
+          <div class="skill-grid">
+            <div class="skill-pill"><span class="pill-icon">💾</span>Disk Analysis</div>
+            <div class="skill-pill"><span class="pill-icon">📧</span>Email Artifacts</div>
+            <div class="skill-pill"><span class="pill-icon">🕵️</span>Incident Response</div>
+            <div class="skill-pill"><span class="pill-icon">🔏</span>Steganography</div>
+            <div class="skill-pill"><span class="pill-icon">🧪</span>Malware Analysis</div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Tools &amp; Languages</h3>
+          <div class="skill-grid">
+            <div class="skill-pill"><span class="pill-icon">🐍</span>Python</div>
+            <div class="skill-pill"><span class="pill-icon">⚡</span>C++</div>
+            <div class="skill-pill"><span class="pill-icon">🔥</span>Burp Suite</div>
+            <div class="skill-pill"><span class="pill-icon">🦅</span>Autopsy</div>
+            <div class="skill-pill"><span class="pill-icon">🌊</span>Wireshark</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency-bars">
+        <h3 class="prof-title">Proficiency</h3>
+        <div class="bar-item">
+          <div class="bar-label"><span>Web Exploitation / CTF</span><span class="bar-pct">85%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Digital Forensics</span><span class="bar-pct">80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>OSINT</span><span class="bar-pct">78%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Python / C++</span><span class="bar-pct">75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Reverse Engineering</span><span class="bar-pct">65%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─────────────────────────────────── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Experience</span>
+        <h2 class="section-title">Leadership &amp; Roles</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Strategic Planner -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Strategic Planner</h3>
+                <p class="company">CLICQ IT Society UNITEN</p>
+              </div>
+              <span class="job-period">Nov 2024 – Present</span>
+            </div>
+            <ul class="job-desc">
+              <li>Developed and structured the club's annual strategic plan, outlining key events, initiatives, and goals for the academic year.</li>
+              <li>Advised on the feasibility and alignment of external event proposals with the club's objectives and resources.</li>
+              <li>Provided continuous support and guidance to ensure smooth execution of all club programs and activities.</li>
+              <li>Directed the <strong>Top Coders Malaysia 2025</strong> and <strong>Technology Sharing Session</strong> programmes.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Strategic Planning</span><span>Event Planning</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- President -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">President</h3>
+                <p class="company">CLICQ IT Society UNITEN</p>
+              </div>
+              <span class="job-period">Oct 2023 – Nov 2024</span>
+            </div>
+            <ul class="job-desc">
+              <li>Led overall club direction, operations, and growth — fostering collaboration between students, industry, and universities.</li>
+              <li>Directed and managed <strong>10+ programmes</strong> including large-scale events promoting IT &amp; cybersecurity awareness.</li>
+              <li>Coordinated cross-functional teams, managed event logistics, and maintained industry partnerships.</li>
+              <li>Oversaw event planning, financial management, and documentation to ensure successful outcomes.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Team Leadership</span><span>Program Management</span><span>Industry Partnership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treasurer -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Treasurer</h3>
+                <p class="company">CLICQ IT Society UNITEN</p>
+              </div>
+              <span class="job-period">Oct 2022 – Oct 2023</span>
+            </div>
+            <ul class="job-desc">
+              <li>Managed club finances, budgeting, and expense reporting for all major activities.</li>
+              <li>Oversaw resource allocation and financial documentation for club programs and workshops.</li>
+              <li>Supported major events including <strong>PETRONAS Cyber Talk</strong>, <strong>HILTI Industrial Talk: Machine Learning</strong>, and <strong>Laravel Framework's Workshop</strong>.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Financial Management</span><span>Budgeting</span><span>Event Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Entry -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Data Entry Assistant</h3>
+                <p class="company">Universiti Tenaga Nasional · Part-time · Remote</p>
+              </div>
+              <span class="job-period">Mar 2023 – Jun 2023</span>
+            </div>
+            <ul class="job-desc">
+              <li>Accurately entered and reviewed large volumes of secondary-level education questions (SPM &amp; IGCSE) into the internal database system.</li>
+              <li>Ensured data consistency and correctness by performing regular checks and updates.</li>
+              <li>Maintained a reliable question bank supporting student engagement and study motivation.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Data Maintenance</span><span>Online Data Entry</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTF Challenge Creator -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">CTF Challenge Creator — Reverse Engineering</h3>
+                <p class="company">CLICQ DIV:IDE CTF 2026</p>
+              </div>
+              <span class="job-period">2026</span>
+            </div>
+            <ul class="job-desc">
+              <li>Designed beginner-friendly Reverse Engineering challenges for UNITEN's internal CTF competition.</li>
+              <li>Collaborated with a dedicated challenge creator team across multiple cybersecurity domains.</li>
+              <li>Delivered challenges that introduced participants to core RE concepts in an engaging, accessible way.</li>
+            </ul>
+            <div class="job-tags">
+              <span>Reverse Engineering</span><span>CTF Design</span><span>Cybersecurity Education</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ──────────────────────────────────── -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <h3 class="edu-degree">BSc. Computer Science (Hons.) Cyber Security</h3>
+            <p class="edu-field">Final Year · CGPA: <strong class="edu-gpa">3.90</strong> · MUET: 4</p>
+            <p class="edu-uni">Universiti Tenaga Nasional (UNITEN)</p>
+            <span class="edu-year">Sep 2023 – Sep 2026</span>
+          </div>
+          <div class="edu-glow"></div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <h3 class="edu-degree">Foundation in Computer Science</h3>
+            <p class="edu-field">CGPA: <strong class="edu-gpa">3.98</strong></p>
+            <p class="edu-uni">Universiti Tenaga Nasional (UNITEN)</p>
+            <span class="edu-year">Sep 2022 – Sep 2023</span>
+          </div>
+          <div class="edu-glow"></div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="cert-section">
+        <h3 class="cert-title">Licenses &amp; Certifications</h3>
+        <div class="cert-grid-wide">
+
+          <div class="cert-card-wide reveal">
+            <div class="cert-icon-wrap">
+              <i class="fas fa-crosshairs"></i>
+            </div>
+            <div class="cert-body">
+              <h4>Certified API Red Team Analyst</h4>
+              <p class="cert-issuer">CyberWarFare Labs · Jan 2026</p>
+              <p class="cert-desc">Credential ID: 6970b03ffbb79ac75854639d</p>
+              <div class="cert-tags">
+                <span>Reconnaissance</span><span>API Security</span><span>Penetration Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card-wide reveal">
+            <div class="cert-icon-wrap blue">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cert-body">
+              <h4>Certified Blue Team Fundamentals</h4>
+              <p class="cert-issuer">CyberWarFare Labs · Dec 2025</p>
+              <p class="cert-desc">Credential ID: 693aeb254ae64839616fe1d5</p>
+              <div class="cert-tags">
+                <span>Security Operations</span><span>Cyber Threat Hunting</span><span>SIEM</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ───────────────────────────────── -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Achievements</span>
+        <h2 class="section-title">CTF &amp; Highlights</h2>
+        <p class="section-sub">Capture The Flag competitions sharpen real-world offensive security skills.</p>
+      </div>
+
+      <!-- CTF wins -->
+      <div class="ctf-grid">
+
+        <div class="ctf-card reveal gold">
+          <div class="ctf-rank">🥇</div>
+          <div class="ctf-body">
+            <h3>Champion — PitchCraft CTF 2025</h3>
+            <p class="ctf-org">CLICQ IT Society UNITEN · Oct 2025</p>
+            <p class="ctf-desc">Secured 1st place in my fourth CTF competition in 2025.</p>
+          </div>
+          <div class="ctf-badge">1st Place</div>
+        </div>
+
+        <div class="ctf-card reveal gold">
+          <div class="ctf-rank">🥇</div>
+          <div class="ctf-body">
+            <h3>Champion — DIV:IDE CTF 2025</h3>
+            <p class="ctf-org">CLICQ IT Society UNITEN · Mar 2025</p>
+            <p class="ctf-desc">Secured 1st place in my first ever CTF competition with Team DarkByte.</p>
+          </div>
+          <div class="ctf-badge">1st Place</div>
+        </div>
+
+        <div class="ctf-card reveal silver">
+          <div class="ctf-rank">🏅</div>
+          <div class="ctf-body">
+            <h3>5th Place — Hack@10 International CTF 2026</h3>
+            <p class="ctf-org">UNITEN · Apr 2026</p>
+            <p class="ctf-desc">International Jeopardy-style CTF — 5th place in finals with team TH3B4BY54D0. Represented UNITEN at international stage.</p>
+          </div>
+          <div class="ctf-badge">Top 5 International</div>
+        </div>
+
+        <div class="ctf-card reveal">
+          <div class="ctf-rank">🚩</div>
+          <div class="ctf-body">
+            <h3>42nd Place — Redshift.ZeroPlusCTF 2026</h3>
+            <p class="ctf-org">Redshift · 2026</p>
+            <p class="ctf-desc">42nd out of 234 teams with 19,402 points. Solved entire Kosmopechkin forensics track (~7,000 pts) using Autopsy for the first time.</p>
+          </div>
+          <div class="ctf-badge">42 / 234 Teams</div>
+        </div>
+
+      </div>
+
+      <!-- Key Areas highlight -->
+      <div class="areas-grid">
+        <div class="area-card reveal">
+          <div class="area-icon"><i class="fas fa-user-secret"></i></div>
+          <h4>Digital Forensics</h4>
+          <p>Email artifacts, disk analysis, metadata tracing, incident response, forensic timeline investigation.</p>
+        </div>
+        <div class="area-card reveal">
+          <div class="area-icon"><i class="fas fa-globe"></i></div>
+          <h4>Web Exploitation</h4>
+          <p>SQL Injection, LFI, IDOR, SSRF, business logic flaws — experience from CTFs and certifications.</p>
+        </div>
+        <div class="area-card reveal">
+          <div class="area-icon"><i class="fas fa-binoculars"></i></div>
+          <h4>OSINT</h4>
+          <p>Open-source intelligence gathering, phishing indicator analysis, and threat reconnaissance.</p>
+        </div>
+        <div class="area-card reveal">
+          <div class="area-icon"><i class="fas fa-microchip"></i></div>
+          <h4>Reverse Engineering</h4>
+          <p>Designed RE challenges for DIV:IDE CTF 2026 and competed in RE domains across multiple CTFs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ────────────────────────────────────── -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Seeking a cybersecurity internship from June 2026? Or just want to connect? My inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:muhammadfawwaz687@gmail.com" class="contact-value">muhammadfawwaz687@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/megatmuhammadfawwaz/" target="_blank" rel="noopener" class="contact-value">megatmuhammadfawwaz</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="contact-value">github.com/fawwaz</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Kajang, Selangor, Malaysia 🇲🇾</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap green"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <p class="contact-label">Availability</p>
+              <span class="contact-value available-green">Open to Internship — June 2026</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Fawwaz<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">Designed &amp; Built by Megat Muhammad Fawwaz &copy; <span id="year"></span></p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/megatmuhammadfawwaz/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:muhammadfawwaz687@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
